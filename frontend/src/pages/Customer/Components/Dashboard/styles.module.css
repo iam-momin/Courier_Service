@@ -1,0 +1,24 @@
+.dashboardContainer {
+    height: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.dashboardContainer>.tabelWrapper {
+    height: calc(100% - 90px);
+}
+
+.viewDetails button {
+    border: none;
+    border-radius: 2px;
+}
+
+.tabelWrapper table thead tr th:nth-child(1),
+.tabelWrapper table tbody tr td:nth-child(1) {
+    width: 60px;
+}
+
+.tabelWrapper table thead tr th:nth-child(2),
+.tabelWrapper table tbody tr td:nth-child(2) {
+    width: 110px;
+}

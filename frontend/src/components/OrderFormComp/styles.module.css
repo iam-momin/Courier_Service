@@ -1,0 +1,313 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 4%;
+    overflow: auto;
+    text-align: start;
+}
+
+.container h3 {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.radioBtn>span {
+    margin-right: 16px;
+}
+
+.radioBtn input {
+    margin-right: 4px;
+}
+
+/* = = = = view only = = = = = = = */
+
+.viewFormContainer input,
+.viewFormContainer>span {
+    box-shadow: none !important;
+    /* padding: 0 !important; */
+    font-size: 18px !important;
+    font-weight: 400;
+
+}
+
+.viewFormContainer>input,
+.viewFormContainer .readOnlySpan>span {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    padding: 0 8px 4px 4px;
+    width: 100%;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.viewFormContainer label {
+    color: #000;
+    opacity: 0.7;
+    font-size: 0.875rem;
+}
+
+.viewFormContainer textarea {
+    box-shadow: none !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+}
+
+/* = = = = =  */
+.addressTable {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/*  ========= insuranceDetails ========== */
+.insuranceDetails {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.insuranceDetails>div {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.insuranceDetails button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    background: #05445E;
+    margin-bottom: 10px;
+}
+
+.insuranceDetailsRowWrapper {
+    display: inline-block;
+    min-width: 575px;
+    width: calc(100% - 1px);
+    overflow-x: auto;
+}
+
+.insuranceDetailsRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.insuranceDetailsRow span:first-child {
+    width: 80%;
+}
+
+.insuranceDetailsRow span:nth-child(2) {
+    width: 20%;
+}
+
+.insuranceDetailsRow span:nth-child(3) {
+    width: 6%;
+}
+
+.insuranceDetails button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    background: #05445E;
+    margin-bottom: 10px;
+}
+
+.insuranceDetailsRadio>span>span:last-child {
+    margin-left: 30px;
+}
+
+.insuranceDetailsRadio>span>span input {
+    margin-right: 4px;
+}
+
+
+
+/* ====================== insuranceAndAdditional ======================== */
+.insuranceAndAdditional {
+    display: flex;
+}
+
+.insuranceAndAdditional>span {
+    display: inline-block;
+    width: 95%;
+    margin: 4px 0;
+}
+
+.insuranceAndAdditional>span select {
+    display: inline-block;
+    margin: 4px 0;
+}
+
+.additionalServices {
+    width: 95%;
+}
+
+.additionalServicesDropdown {
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+}
+
+.serviceDropdownContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    box-shadow: 0 0 6px -2px #000;
+    border-radius: 4px;
+}
+
+.serviceDropdownContent>div:hover {
+    background: lightskyblue;
+}
+
+.serviceDropdownContent>div {
+    padding: 10px 16px;
+    width: 49%;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.serviceDropdownContent input {
+    margin-right: 8px;
+}
+
+.serviceDropdownContent>span {
+    padding: 10px;
+}
+
+/* .serviceDropdownContent > div > span:last-child{
+    display: inline-block;
+    margin-left: auto;
+} */
+
+.companyDetails {
+    padding-left: 4px;
+}
+
+.companyDetails textarea {
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 2px 0px #212224;
+}
+
+
+.dateTotalPremium {
+    display: flex;
+    gap: 20px;
+}
+
+/* = = = = Admin Additional Service = = = = = =  */
+
+.adminServiceDropdown>div {
+    width: 100%;
+    padding: 6px;
+}
+
+.adminServiceDropdown>div>span:first-child {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.additionCostInput {
+    min-width: 40px;
+    width: 20%;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 0 2px 0px #212224;
+    margin-left: auto;
+}
+
+/* = = = = = = = = = = = = = = = =  */
+.uplaodParcelImg>span {
+    display: inline-block;
+    width: 100%;
+}
+
+.parcelImg {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 4px;
+    width: 100%;
+}
+
+.parcelImg>div {
+    display: flex;
+    /* width: 20%; */
+    margin: 4px 0px 4px 10px;
+}
+
+.parcelImg>div>span {
+    display: inline-block;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* = = = = = a d d i t i o n a l = = = = = = =  */
+.additionalServices {
+    padding: 4px;
+    width: 100%;
+}
+
+.extraCost {
+    display: flex;
+    gap: 3%;
+    flex-wrap: wrap;
+}
+
+.extraCost>span:last-child {
+    width: 100px;
+}
+
+.cashPaymentRadioBtn {
+    padding: 6px;
+}
+
+.cashPaymentRadioBtn>div {
+    margin-top: 3px;
+}
+
+.note {
+    font-size: small;
+}
+
+/* Signature canvas */
+.signatureWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.signatureWrapper canvas {
+    border: 1px solid #000;
+    margin-bottom: 8px;
+}
+
+.signatureWrapper>button {
+    margin: 0;
+}

@@ -1,0 +1,139 @@
+.popupContainer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--popup-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popupWrapper{
+    max-width: 800px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    background: var(--elements--main);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-out-md);
+}
+
+.popupBody{
+    width: 100%;
+    height: calc(100% - 90px);
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 2px;
+}
+
+.header{
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.text{
+    color: #121212;
+    font-size: 20px;
+    text-align: start;
+}
+
+.popupBtnWrapper{
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    text-align: end;
+}
+
+.popupBtnWrapper button{
+    margin: 0 8px;
+}
+.companyDetails{
+    margin-top: 20px;
+    text-align: left;
+}
+/* .companyDetails textarea{
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 2px 0px #212224;
+    resize: none;
+    padding: 10px;
+    border-radius: 4px;
+} */
+.signatureContainer{
+    display: flex;
+    text-align: left;
+}
+.signatureWrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 10px;
+}
+.signatureWrapper canvas{
+    border: 1px solid #000;
+    margin-bottom: 8px;
+    background: #FFF;
+}
+.signatureWrapper > button{
+    margin: 0;
+}
+
+.uplaodParcelImg > div{
+    text-align: start;
+    width: 50%;
+}
+.uplaodParcelImg{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 0 4%;
+    gap: 0 4%;
+    width: 100%;
+}
+.parcelImg{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 120px;
+    overflow: auto;
+    /* justify-content: space-between; */
+}
+.parcelImg > div{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    /* margin: 4px 10px 4px 0; */
+}
+.parcelImg > div > span{
+    display: inline-block;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.declaration{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: end;
+}
+.declaration input{
+    margin-right: 4px;
+}
+.idAndAmount{
+    display: flex;
+    flex-direction: row;
+    gap: 0 4%;
+    width: 100%;
+}
+.idAndAmount span{
+    width: 50%;
+}

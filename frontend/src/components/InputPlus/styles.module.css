@@ -1,0 +1,42 @@
+.inputPlusContainer{
+  width: 100%;
+}
+.inputPlusContainer > div{
+  width: 100%;
+  display: flex;
+}
+.inputPlusContainer > div > :first-child{
+  width: calc(100% - 50px);
+}
+.plusIcon{
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-in-sm);
+  cursor: pointer;
+}
+.plusIcon:hover{
+  box-shadow: var(--box-shadow-out-sm);
+}
+.plusIcon:active{
+  box-shadow: var(--box-shadow-in-sm);
+}
+.disablePlusIcon{
+  opacity: 0.5;
+  pointer-events: none;
+}
+.readOnlySpan{
+  width: 100% !important;
+}
+.readOnlySpan>span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  padding: 0 8px 4px 4px;
+  width: 100%;
+  display: inline-block;
+  font-weight: 500;
+  margin-top: 8px;
+}

@@ -1,0 +1,128 @@
+.tableContainer {
+	width: auto;
+	height: 100%;
+}
+
+.tableContainer table {
+	height: 100%;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: var(--box-shadow-out-md);
+}
+
+.tableContainer table tbody {
+	display: block;
+	height: calc(100% - 56px);
+	overflow-y: auto;
+}
+
+.tableContainer thead,
+.tableContainer tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.tableContainer thead {
+	width: 100%;
+}
+
+
+.tableContainer body {
+	margin: 0;
+	padding: 20px;
+	font-family: sans-serif;
+}
+
+.tableContainer table tbody::-webkit-scrollbar {
+	/* display: none; */
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.tableContainer table tbody {
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.tableContainer table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.tableContainer table tbody td,
+.tableContainer table thead th {
+	padding: 8px 0px 8px 16px;
+	text-align: start;
+	font-size: 0.875rem;
+	min-height: 48px;
+	word-wrap: break-word;
+}
+
+.tableContainer table thead th {
+	font-size: 0.875rem;
+	font-weight: bold;
+	padding: 16px 0px 16px 16px;
+}
+
+.tableContainer table th {
+	background-color: var(--primary-color);
+	color: #ffffff;
+}
+
+.tableContainer table tbody tr {
+	border-bottom: var(--border-thin);
+}
+
+.tableContainer table tbody td div span {
+	padding: 6px;
+	border-radius: 2px;
+}
+
+.tableContainer table tbody td div span:hover {
+	background: #D4F1F4;
+}
+
+/*responsive*/
+
+@media(max-width: 800px) {
+	.tableContainer table thead {
+		display: none;
+	}
+
+	.tableContainer table,
+	table tbody,
+	.tableContainer table tr,
+	.tableContainer table td {
+		display: block;
+		width: 100%;
+	}
+
+	.tableContainer table tr {
+		margin-bottom: 15px;
+	}
+
+	.tableContainer table td {
+		text-align: end !important;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+		padding: 12px !important;
+	}
+
+	.tableContainer table td::before {
+		content: attr(data-label);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		padding-left: 15px;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}

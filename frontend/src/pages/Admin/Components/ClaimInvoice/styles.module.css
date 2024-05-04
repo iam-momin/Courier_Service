@@ -1,0 +1,54 @@
+.ordersContainer{
+    height: 100%;
+    position: relative;
+    padding: 20px;
+}
+.ordersContainer > .tabelWrapper{
+    height: calc(100% - 100px);
+}
+.viewDetails{
+    text-align: center;
+}
+.viewDetails > span{
+    cursor: pointer;
+}
+
+.filterContainer{
+    width: 100%;
+    height: 50px;
+}
+.tabelWrapper table{
+    width: 100%;
+    table-layout: fixed
+}
+
+@media (min-width: 1300px){
+.tabelWrapper table thead tr th:first-child,
+.tabelWrapper table tbody tr td:first-child{
+    width: 60px;
+}
+.tabelWrapper table thead tr th:nth-child(2),
+.tabelWrapper table tbody tr td:nth-child(2){
+    width: 90px;
+}
+.tabelWrapper table thead tr th:nth-child(3),
+.tabelWrapper table tbody tr td:nth-child(3){
+    width: 250px;
+}
+.tabelWrapper table thead tr th:nth-child(5),
+.tabelWrapper table tbody tr td:nth-child(5){
+    width: 115px;
+}
+.tabelWrapper table thead tr th:nth-child(6),
+.tabelWrapper table tbody tr td:nth-child(6){
+    width: 115px;
+}
+.tabelWrapper table thead tr th:nth-child(7),
+.tabelWrapper table tbody tr td:nth-child(7){
+    width: 140px;
+}
+.tabelWrapper table thead tr th:last-child,
+.tabelWrapper table tbody tr td:last-child{
+    width: 100px;
+}
+}

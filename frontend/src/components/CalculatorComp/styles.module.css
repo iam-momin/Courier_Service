@@ -1,0 +1,254 @@
+.calculator div {
+   box-shadow: none;
+}
+
+/* ====calc======= */
+.container {
+   display: inline-block;
+   height: calc(100% - 100px);
+   width: 100%;
+   padding: 20px 0px 0px;
+   overflow-y: visible !important;
+   scrollbar-width: none;
+   box-shadow: 0px 0px 8px -4px #212242;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.container::-webkit-scrollbar {
+   /* WebKit */
+   width: 0;
+   height: 0;
+}
+
+
+.container h4 {
+   text-align: left;
+   margin-top: 20px;
+   /* color: var(--dark-color); */
+}
+
+.parcelDetails {
+   height: 210px;
+   width: 100%;
+   overflow-y: scroll;
+   /* border-bottom: 1px solid #05445E; */
+   border-radius: 0px;
+   scrollbar-width: none;
+   /* Firefox */
+   -ms-overflow-style: none;
+   margin-top: 10px;
+
+}
+
+.declaration {
+   border-bottom: 1px solid #05445E !important;
+   text-align: start;
+}
+.declaration input{
+   cursor: pointer;
+}
+
+.parcelDetailsTable {
+   width: auto;
+   /* change width here */
+   table-layout: fixed;
+   border-collapse: collapse;
+}
+
+.parcelDetails thead th>span {
+   width: 120px;
+}
+
+.parcelDetailsTable thead {
+   position: sticky;
+   top: 0;
+}
+
+.parcelDetailsTable thead tr {
+   height: 75px;
+   vertical-align: text-top;
+}
+
+.inputRow label {
+   font-size: 14px;
+}
+
+.inputRow th {
+   padding: 0 4px;
+}
+
+.inputRow th:last-child {
+   position: relative;
+}
+
+.inputRow .addBtn:last-child {
+   padding-top: 18px;
+   vertical-align: middle;
+}
+
+.addItem {
+   display: inline-block;
+   width: 90%;
+   padding: 8px 0px;
+   background: #05445E;
+   color: #FFF;
+   border-radius: 2px;
+   cursor: pointer;
+}
+
+.disableAdd {
+   pointer-events: none;
+   opacity: 0.7;
+}
+
+.parcelDetails tbody tr:hover {
+   background: #eee;
+}
+
+.parcelDetails tbody tr td {
+   padding-left: 8px;
+   text-align: left;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+.parcelDetails tbody tr td:last-child {
+   display: flex;
+   justify-content: space-between;
+}
+
+.parcelDetails tbody tr td:last-child>span {
+   display: inline-block;
+   padding: 6px;
+   border-radius: 2px;
+   cursor: pointer;
+}
+
+.parcelDetails tbody tr td:last-child span img {
+   height: 26px;
+   width: 26px;
+}
+
+.parcelDetails tbody tr td:last-child span:hover {
+   background: #BDBDBD;
+}
+
+.dropdownWrapper {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+   text-align: start;
+}
+
+.dropdownWrapper>span {
+   display: inline-block;
+   width: 46%;
+}
+.dropdownWrapper .disable{
+   cursor: not-allowed;
+}
+
+.calculateWrapper {
+   text-align: left;
+   margin-top: 20px;
+   /* color: var(--dark-color); */
+   font-weight: 300;
+}
+
+.calculateWrapper h4 {
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+
+/* ============================ Total Detail ============================== */
+.totalContainer {
+   height: auto;
+   width: 100%;
+   /* margin-top: 16px; */
+}
+
+.totalContainer h4 {
+   text-align: left;
+   /* color: var(--dark-color); */
+}
+
+.totalWrapper {
+   display: flex;
+   margin-top: 10px;
+}
+
+.totalWrapper div {
+   width: 20%;
+   text-align: left;
+}
+
+.totalWrapper div span {
+   display: inline-block;
+   width: 100%;
+   /* color: var(--dark-color); */
+}
+
+.totalWrapper div span:first-child {
+   font-size: 14px;
+   /* color: var(--light-dark-color); */
+}
+
+.totalWrapper div span:last-child {
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 500;
+}
+
+/* ==== read only ==== */
+
+.parcelDetailsTableView {
+   width: 80%;
+   margin: 0 10%;
+}
+
+.parcelDetailsTableView td,
+.parcelDetailsTableView th {
+   height: 36px;
+   width: 100px;
+   text-align: start !important;
+}
+
+/* v i e w */
+.viewFormContainer input {
+   box-shadow: none !important;
+   padding: 0 !important;
+   font-size: 18px !important;
+   font-weight: 600;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 0;
+}
+
+.viewFormContainer label {
+   color: #000;
+   opacity: 0.7;
+   font-size: 14px;
+}
+
+.viewFormContainer textarea {
+   box-shadow: none !important;
+   padding: 0 !important;
+   font-size: 18px !important;
+}
+
+
+/*  = = = Cost Table = = = = */
+.costTable{
+   width: 100%;
+}
+.costTable > tbody > tr >  td:first-child{
+   width: 230px;
+   text-align: end;
+   font-weight: 400;
+}
+.costTable > tbody > tr >  td:last-child{
+   text-align: start;
+   padding-left: 10px;
+}

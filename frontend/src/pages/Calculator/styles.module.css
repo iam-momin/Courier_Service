@@ -1,0 +1,266 @@
+.mainContainer{
+    --dark-color: #212224;
+    --light-dark-color: #4d5156
+  }
+.mainContainer{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container{
+    display: inline-block;
+    height: calc(100% - 100px);
+    width: 760px;
+    margin: 40px 0;
+    padding: 20px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    box-shadow: 0px 0px 8px -4px #212242;
+    border-radius: 8px;
+    
+}
+
+.container::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.container h1{
+    color: var(--dark-color);
+}
+.container h4{
+    text-align: left;
+    margin-top: 30px;
+    color: var(--dark-color);
+}
+
+.parcelDetails{
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+    border-bottom: 1px solid #05445E;
+    border-radius: 0px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+    margin-top: 10px;
+    
+}
+.parcelDetails::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+.parcelDetailsTable{
+    width: 80%; /* change width here */
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 0 10%;
+}
+
+.parcelDetailsTable thead{
+    position: sticky;
+    top: 0;
+}
+
+.parcelDetailsTable thead tr{
+    height: 75px;
+    vertical-align: text-top;
+}
+.inputRow label{
+    font-size: 14px;
+    /* color: var(--light-dark-color); */
+}
+.inputRow th{
+    padding: 0 4px;
+}
+.inputRow th:last-child{
+    position: relative;
+}
+.inputRow th:last-child span{
+    position: absolute;
+    top: 19px;
+    left: 2px;
+}
+
+.addItem{
+    display: inline-block;
+    width: 90%;
+    padding: 8px 0px;
+    background: #05445E;
+    color: #FFF;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.disableAdd{
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.parcelDetails tbody tr:hover{
+    background: #eee;
+}
+.parcelDetails tbody tr td{ 
+    padding-left: 8px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.parcelDetails tbody tr td:last-child{
+    text-align: center;
+}
+.parcelDetails tbody tr td:last-child span{
+    display: inline-block;
+    padding: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.parcelDetails tbody tr td:last-child > span:first-child{
+    margin: 0 8px 0 0;
+}
+.parcelDetails tbody tr td:last-child span img{
+    height: 26px;
+    width: 26px;
+}
+.parcelDetails tbody tr td:last-child span:hover{
+    background: #BDBDBD;
+}
+
+
+
+/* ============================ Total Detail ============================== */
+.totalContainer{
+    height: auto;
+    width: 100%;
+    margin-top: 16px;
+    padding: 8px;
+}
+.totalContainer h4{
+    text-align: left;
+    color: var(--dark-color);
+}
+.totalWrapper{
+    display: flex;
+    margin-top: 10px;
+}
+.totalWrapper div{
+    width: 20%;
+    text-align: left;
+}
+.totalWrapper div span{
+    display: inline-block;
+    width: 100%;
+    color: var(--dark-color);
+}
+.totalWrapper div span:first-child{
+    font-size: 14px;
+    /* color: var(--light-dark-color); */
+}
+.totalWrapper div span:last-child{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+ /* =============================== Adderss ================================== */
+ .addressContainer{
+     margin-top: 20px;
+     padding: 0 8px;
+ }
+ .addressContainer h4, .addressContainer span{
+    text-align: left;
+    color: var(--dark-color);
+ }
+ .dropdownWrapper {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+ }
+ .dropdownWrapper > span{
+    display: inline-block;
+    width: 46%;
+ }
+
+ /* ============================== Expected cost ============================= */
+ .currencyExchange{
+     margin-top: 40px;
+     text-align: start;
+ }
+ .currencyExchange span{
+     margin-left: 10px;
+ }
+ .currencyExchange input{
+     cursor: pointer;
+ }
+ .calculateWrapper{
+    text-align: left;
+    margin-top: 20px;
+    padding: 0 8px;
+    color: var(--dark-color);
+    font-weight: 300;
+ }
+ .calculateWrapper h4{
+     margin-top: 0;
+     margin-bottom: 10px;
+ }
+
+ .calculateWrapper button{
+     font-size: 16px;
+     font-weight: 700;
+     padding: 8px 16px;
+     border: none;
+     border-radius: 2px;
+     /* background: #05445E; */
+     background: #F8CF40;
+     color: #000;
+     cursor: pointer;
+ }
+
+
+
+ @media (max-width: 800px){
+     .container{
+         height: calc(100% - 40px);
+         width: 92%;
+         box-shadow: none;
+         margin: 0;
+     }
+     .container h1{
+         font-size: 24px;
+     }
+     .parcelDetails{
+         width: calc(100% - 8px);
+         overflow-x: auto;
+         padding: 0;
+     }
+     .parcelDetails table{
+         min-width: 480px;
+         margin: 0;
+     }
+     .inputRow th{
+         padding: 0;
+     }
+     .inputRow th:last-child span{
+        top: 24px;
+        padding: 6px;
+     }
+     .totalWrapper > div{
+         width: 50%;
+         max-width: 200px;
+     }
+     .dropdownWrapper{
+         flex-direction: column;
+     }
+     .dropdownWrapper > span:first-child{
+         margin-bottom: 10px;
+     }
+     .dropdownWrapper > span{
+         width: 90%;
+         max-width: 500px;
+     }
+     .calculateWrapper span:last-child{
+         display: block;
+     }
+ }

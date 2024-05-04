@@ -1,0 +1,766 @@
+.orderForm {
+    height: 100%;
+    width: 100%;
+
+    padding: 20px 0px;
+    overflow: hidden;
+}
+
+.formContainer {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    /* overflow-y: auto; */
+}
+
+.formContainer>div {
+    width: 800px;
+    min-width: 600px;
+}
+
+
+.nameWrapper {
+    text-align: start;
+}
+
+.nameWrapper>span {
+    display: inline-block;
+    width: 47%;
+    margin: 4px 0;
+}
+
+.nameWrapper>span:last-child {
+    margin-left: 2%;
+}
+
+.nameWrapper>span>input {
+    width: 96%;
+    font-size: 16px;
+    padding: 8px;
+}
+
+
+
+.emailNphone {
+    text-align: start;
+}
+
+.emailNphone>span {
+    display: inline-block;
+    width: 47%;
+    margin: 4px 0;
+}
+
+.emailNphone>span:last-child {
+    /* margin-left: 2%; */
+}
+
+.emailNphone>span>input {
+    width: 96%;
+    font-size: 16px;
+    padding: 8px;
+}
+
+
+/* ================= address ==================== */
+.addressContainer {
+    text-align: start;
+}
+
+.address1n2 {
+    margin-top: 8px;
+}
+
+.address1n2>span,
+.cityNzipCode>span {
+    display: inline-block;
+    width: 47%;
+    margin: 4px 0;
+}
+
+.address1n2>span:last-child,
+.cityNzipCode>span:last-child {
+    margin-left: 2%;
+}
+
+.address1n2>span>input,
+.cityNzipCode>span>input {
+    width: 96%;
+    font-size: 16px;
+    padding: 8px;
+}
+
+/* ================== */
+
+.sendersDetail {
+    text-align: start;
+}
+
+.sendersDetail>span {
+    display: inline-block;
+    width: 47%;
+    margin: 4px 0;
+}
+
+.sendersDetail>span:last-child {
+    margin-left: 2%;
+}
+
+.sendersDetail>span>input {
+    width: 96%;
+    font-size: 16px;
+    padding: 8px;
+}
+
+/* ============== Main Style ================= */
+.addressContainer {
+    margin-top: 20px;
+}
+
+
+
+.calculator div {
+    box-shadow: none;
+}
+
+/* ====calc======= */
+/* .container{
+    display: inline-block;
+    height: calc(100% - 100px);
+    width: 760px;
+    padding: 20px 0px 0px;
+    overflow-y: visible !important;
+    scrollbar-width: none;
+    box-shadow: 0px 0px 8px -4px #212242;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.container h1{
+    color: var(--dark-color);
+}
+.container h4{
+    text-align: left;
+    margin-top: 20px;
+    color: var(--dark-color);
+}
+
+.parcelDetails{
+    height: 210px;
+    width: 100%;
+    overflow-y: scroll;
+    border-bottom: 1px solid #05445E;
+    border-radius: 0px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    margin-top: 10px;
+    
+}
+.parcelDetailsTable{
+    width: 84%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 0 8%;
+}
+
+.parcelDetailsTable thead{
+    position: sticky;
+    top: 0;
+    background: #FFF;
+}
+
+.parcelDetailsTable thead tr{
+    height: 75px;
+    vertical-align: text-top;
+}
+.inputRow label{
+    font-size: 14px;
+}
+.inputRow th{
+    padding: 0 4px;
+}
+.inputRow input{
+    padding: 6px;
+    box-shadow: 0 0 6px -2px #212224;
+    border-radius: 2px;
+}
+.inputRow input::placeholder{
+    font-size: 14px;
+}
+.inputRow th:last-child{
+    position: relative;
+}
+.inputRow th:last-child{
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+.addItem{
+    display: inline-block;
+    width: 90%;
+    padding: 8px 0px;
+    background: #05445E;
+    color: #FFF;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.disableAdd{
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.parcelDetails tbody tr:hover{
+    background: #eee;
+}
+.parcelDetails tbody tr td{ 
+    padding-left: 8px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.parcelDetails tbody tr td:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+.parcelDetails tbody tr td:last-child > span{
+    display: inline-block;
+    padding: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.parcelDetails tbody tr td:last-child span img{
+    height: 26px;
+    width: 26px;
+}
+.parcelDetails tbody tr td:last-child span:hover{
+    background: #BDBDBD;
+} */
+
+
+
+/* ============================ Total Detail ============================== */
+.totalContainer {
+    height: auto;
+    width: 100%;
+    /* margin-top: 16px; */
+}
+
+.totalContainer h4 {
+    text-align: left;
+    color: var(--dark-color);
+}
+
+.totalWrapper {
+    display: flex;
+    margin-top: 10px;
+}
+
+.totalWrapper div {
+    width: 20%;
+    text-align: left;
+}
+
+.totalWrapper div span {
+    display: inline-block;
+    width: 100%;
+    color: var(--dark-color);
+}
+
+.totalWrapper div span:first-child {
+    font-size: 14px;
+    /* color: var(--light-dark-color); */
+}
+
+.totalWrapper div span:last-child {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+/* =============================== Adderss ================================== */
+.addressContainer {
+    margin-top: 20px;
+    /* padding: 0 8px; */
+}
+
+.addressContainer h4,
+.addressContainer span {
+    text-align: left;
+    color: var(--dark-color);
+}
+
+.dropdownWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.dropdownWrapper>span {
+    display: inline-block;
+    width: 46%;
+}
+
+.countryDropdownWrapper {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.countryDropdownWrapper>span {
+    display: inline-block;
+    width: 95%;
+}
+
+/* ============================== Expected cost ============================= */
+/* .currencyExchange{
+     margin-top: 40px;
+     text-align: start;
+ } */
+.currencyExchange span {
+    margin-left: 10px;
+}
+
+.currencyExchange input {
+    cursor: pointer;
+}
+
+.calculateWrapper {
+    text-align: left;
+    margin-top: 20px;
+    color: var(--dark-color);
+    font-weight: 300;
+}
+
+.calculateWrapper h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.calculateWrapper button {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 2px;
+    /* background: #05445E; */
+    background: #F8CF40;
+    color: #000;
+    cursor: pointer;
+}
+
+.submitBtn {
+    text-align: left;
+    margin: 12px 0;
+}
+
+.submitBtn button {
+    margin-right: 10px;
+}
+
+.preferredDate {
+    text-align: start;
+}
+
+.preferredDate>span {
+    display: inline-block;
+    width: 47%;
+    margin: 4px 0;
+}
+
+.preferredDate>span:last-child {
+    margin-left: 2%;
+}
+
+.preferredDate>span>input {
+    width: 96%;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.invoiceCurrency {
+    display: inline-block;
+    flex-direction: column;
+}
+
+.invoiceCurrency>* {
+    margin: 0 !important;
+    margin-bottom: 4px !important;
+}
+
+.invoiceCurrency input,
+.invoiceCurrency>span {
+    margin-right: 4px !important;
+    margin-left: 0;
+}
+
+
+/* ======================= parcelAndImg ======================= */
+.parcelAndImg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parcelAndImg>span {
+    display: inline-block;
+    width: 47%;
+    margin: 4px 0;
+}
+
+.parcelAndImg>span input {
+    display: inline-block;
+    width: 97%;
+    margin: 4px 0;
+}
+
+.parcelAndImg>span:last-child {
+    margin-left: 2%;
+}
+
+/* ====================== insuranceAndAdditional ======================== */
+.insuranceAndAdditional {
+    display: flex;
+}
+
+.insuranceAndAdditional>span {
+    display: inline-block;
+    width: 95%;
+    margin: 4px 0;
+}
+
+.insuranceAndAdditional>span select {
+    display: inline-block;
+    margin: 4px 0;
+}
+
+.additionalServices {
+    width: 95%;
+}
+
+.additionalServicesDropdown {
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+}
+
+.serviceDropdownContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4px 4px 10px 4px;
+    box-shadow: 0 0 6px -2px #000;
+    border-radius: 4px;
+}
+
+.serviceDropdownContent>div:hover {
+    background: lightskyblue;
+}
+
+.serviceDropdownContent>div {
+    padding: 10px;
+    width: 49%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.serviceDropdownContent input {
+    margin-right: 8px;
+}
+
+.companyDetails {
+    margin-top: 20px;
+}
+
+.companyDetails textarea {
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 2px 0px #212224;
+}
+
+.insuranceDetails {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.insuranceDetails>div {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.insuranceDetails>div input {
+    /* width: 100%; */
+}
+
+.insuranceDetailsRowWrapper {
+    display: inline-block;
+    min-width: 575px;
+    width: calc(100% - 1px);
+    overflow-x: auto;
+}
+
+.insuranceDetailsRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.insuranceDetailsRow span:first-child {
+    width: 80%;
+}
+
+.insuranceDetailsRow span:nth-child(2) {
+    width: 20%;
+}
+
+.insuranceDetailsRow span:nth-child(3) {
+    width: 6%;
+}
+
+.insuranceDetails button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    background: #05445E;
+    margin-bottom: 10px;
+}
+
+.insuranceDetailsRadio>span>span:last-child {
+    margin-left: 30px;
+}
+
+.insuranceDetailsRadio>span>span input {
+    margin-right: 4px;
+}
+
+.signatureContainer {
+    display: flex;
+}
+
+.signatureWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.signatureWrapper canvas {
+    border: 1px solid #000;
+    margin-bottom: 8px;
+}
+
+.signatureWrapper>button {
+    margin: 0;
+}
+
+.dateTotalPremium {
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dateTotalPremium>span {
+    margin: 0 10px;
+}
+
+.dateTotalPremium label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.dateTotalPremium div {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.uplaodParcelImg>span {
+    display: inline-block;
+    width: 94.5%;
+}
+
+.parcelImg {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.parcelImg>div {
+    display: flex;
+    /* width: 20%; */
+    margin: 4px 10px;
+}
+
+.parcelImg>div>span {
+    display: inline-block;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 800px) {
+    .calculator .container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .container {
+        height: calc(100% - 40px);
+        width: 92%;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .parcelDetails {
+        width: calc(100% - 8px);
+        overflow-x: auto;
+        padding: 0;
+    }
+
+    .parcelDetails table {
+        min-width: 480px;
+        margin: 0;
+    }
+
+    .inputRow th {
+        padding: 0;
+    }
+
+    .inputRow th:last-child span {
+        top: 24px;
+        padding: 6px;
+    }
+
+    .totalWrapper>div {
+        width: 50%;
+        max-width: 200px;
+    }
+
+    .dropdownWrapper {
+        flex-direction: column;
+    }
+
+    .dropdownWrapper>span:first-child {
+        margin-bottom: 10px;
+    }
+
+    .dropdownWrapper>span {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .calculateWrapper span:last-child {
+        display: block;
+    }
+
+    .serviceDropdownContent>div {
+        width: 50%;
+    }
+
+    .signatureContainer {
+        flex-direction: column-reverse;
+    }
+
+    .dateTotalPremium {
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .orderForm {
+        padding: 20px;
+    }
+
+    .formContainer>div {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .nameWrapper>span {
+        display: block;
+        width: 80%;
+        margin: 4px 0;
+    }
+
+    .nameWrapper>span:last-child {
+        margin-left: 0;
+    }
+
+    .emailNphone>span {
+        display: inline-block;
+        width: 80%;
+        margin: 4px 0;
+    }
+
+    .address1n2>span,
+    .cityNzipCode>span {
+        display: block;
+        width: 80%;
+        margin: 4px 0;
+    }
+
+    .address1n2>span:last-child,
+    .cityNzipCode>span:last-child {
+        margin-left: 0;
+    }
+
+    .sendersDetail>span {
+        display: block;
+        width: 80%;
+        margin: 4px 0;
+    }
+
+    .sendersDetail>span:last-child {
+        margin-left: 0;
+    }
+
+    .preferredDate>span {
+        display: block;
+        width: 80%;
+        margin: 4px 0;
+    }
+
+    .serviceDropdownContent>div {
+        width: 100%;
+    }
+
+    .parcelAndImg>span {
+        width: 80%;
+        margin: 0;
+    }
+
+    .submitBtn {
+        margin-left: 0;
+    }
+}
+
+.addressTable {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+}

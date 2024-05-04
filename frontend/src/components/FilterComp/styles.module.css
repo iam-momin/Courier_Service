@@ -1,0 +1,167 @@
+.container{
+    width: calc(100% - 0px);
+    height: auto;
+    position: relative;
+    padding: 16px;
+    border-radius: 10px;
+    /* box-shadow: var(--box-shadow-out-sm); */
+    border: var(--border-thin);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.filterContainer{
+    width: calc(100% - 250px);
+    height: 100%;
+    display: flex;
+    z-index: 99;
+    gap: 4px;
+    justify-content: left;
+}
+
+.allInputsNdropdown{
+    width: auto;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 40px;
+    border-radius: 4px;
+}
+.allInputsNdropdown > div > div{
+    border: none;
+    box-shadow: none;
+}
+.allInputs{
+    height: 38px;
+    min-width: 150px;
+    max-width: 150px;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px 0px 0px 2px !important;
+    outline: none;
+}
+.filterListDropdown{
+    max-width: 120px !important;
+    width: 40%;
+}
+
+.dropdown{
+    max-width: 160px;
+    width: 40%;
+    min-width: 150px;
+    font-size: 14px;
+}
+.aVerticalSeparator {
+    border-left: 1px solid #5f656d;
+    width: 1px;
+    height: 100%;
+    /* margin: 0 8px; */
+}
+
+.dateInput{
+    width: 200px;
+}
+.dateInput input{
+    width: 100%;
+}
+
+.filteApplyBtn, .filterClearBtn{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 8px 18px;
+    margin-left: 8px;
+    border: none;
+    /* height: 80%; */
+}
+
+.filterClearBtn{
+    color: #FFF;
+    background: #05445E;
+}
+
+.filterBtn{
+    display: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 4px;
+    height: 80%;
+    border: 2px solid var(--primary-color);
+    background: #D4F1F4;
+
+}
+
+/* Pagination */
+.pagination{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.pagination .arrowIcon{
+    border: var(--border-thin);
+    padding: 12px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination .arrowIcon:nth-child(2){
+    transform: rotate(180deg);
+}
+.pagination .arrowIcon svg{
+    font-size: 20px;
+}
+.pagination .arrowIcon:disabled{
+    opacity: 0.7;
+}
+
+@media (max-width: 1000px){
+    .filterContainer, .allInputsNdropdown, .dateInput, .filteApplyBtn, .statusDropdown, .filterClearBtn, .aVerticalSeparator{
+        display: none;
+        margin-top: 16px;
+        justify-content: unset;
+    }
+    .filterBtn{
+        display: inline-block;
+        width: 100%;
+    }
+    .filterContainer{
+        flex-wrap: wrap;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background: #FFF;
+        height: auto;
+        padding: 10px;
+        box-shadow: 0px 0px 8px -2px #000;
+        border-radius: 4px;
+    }
+    .allInputsNdropdown{
+        width: 100%;
+    }
+    .allInputsNdropdown > .allInputs{
+        width: 49.5%;
+        max-width: unset;
+        min-width: unset;
+    }
+    .dateInput{
+        width: 49.5%;
+    }
+    .dropdown{
+        width: 49.5%;
+        max-width: unset;
+        min-width: unset;
+    }
+    .filterClearBtn{
+        width: 100%;
+    }
+}
+

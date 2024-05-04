@@ -1,0 +1,26 @@
+.mainHeader#mainHeader{
+    width: calc(100% - 50px);
+    padding: 8px 20px;
+    margin-left: 50px;
+    border-bottom: var(--border-thin);
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainHeader#mainHeader .left{
+    display: flex;
+    align-items: center;
+}
+
+.mainHeader#mainHeader .left img{
+    height: 36px;
+    margin-right: 20px;
+}
+
+.mainHeader#mainHeader .left > h5{
+    font-weight: 300;
+    margin: 0;
+}
+.mainHeader#mainHeader .left > h5:last-child{
+    font-weight: 500;
+}

@@ -1,0 +1,43 @@
+.passContainer{
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    background: var(--popup-background-color);
+}
+
+.wrapper{
+    align-self: center;
+    height: auto;
+    max-width: 600px;
+    width: 90% !important;
+    background: var(--elements--main);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-out-md);
+}
+
+.bodyContainer > span{
+    margin: 10px 0;
+    min-height: 48px;
+}
+.errorMsg{
+    font-size: 14px;
+    color: red;
+}
+
+.btnContainer{
+    height: auto;
+    text-align: end !important;
+    margin-top: 20px;
+}
+.btnContainer > button{
+    margin: 0 8px;
+}
+

@@ -1,0 +1,132 @@
+.mainContainer{
+    --dark-color: #212224;
+    --light-dark-color: #4d5156;
+  }
+.mainContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.leftContainer{
+    height: 100%;   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapper{
+    height: 600px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 100px;
+    box-shadow: var(--box-shadow-out-md);
+    border-radius: 10px;
+}
+
+.emailInput {
+    width: 100%;
+    margin-top: 18px;
+}
+.emailInput > input{
+    font-size: 16px;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.continueBtn, .calculateBtn{
+    width: 100%;
+    margin-top: 18px;
+}
+.calculateBtn{
+    margin-top: 5px;
+}
+.calcText{
+    width: 98%;
+    margin-top: 30px;
+    text-align: start;
+    /* color: var(--light-dark-color); */
+    font-size: 14px;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+.passwordError, .wrongEmail{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color: red;
+    font-size: 14px;
+}
+.emailInput{
+    margin-top: 0;
+}
+.disableContinueBtn{
+    background: #000;
+    opacity: 0.7;
+    pointer-events: none;
+}
+.loginHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.loginHeader svg{
+    position: absolute;
+    left: 0;
+}
+.loginHeader > div{
+    margin-bottom: 20px;
+}
+.resetLink{
+    width: 100%;
+    color: #05445E;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 4px;
+}
+.showPassword{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.showPassword input{
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .rightContainer{
+        display: none;
+        /* flex-shrink: 1; */
+    }
+    .contentWrapper{
+        width: 60%;
+        max-width: 400px;
+        min-width: 400px;
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 450px){
+    .contentWrapper{
+        width: 100%;
+        max-width: 400px;
+        min-width: unset;
+        padding: 30px;
+        margin: 10px;
+    }
+    .continueBtn, .calculateBtn, .emailInput, .calcText{
+        width: 100%;
+    }
+}

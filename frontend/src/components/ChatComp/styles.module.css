@@ -1,0 +1,266 @@
+.chatCompContainer{
+    width: 100%;
+    height: 100%;
+    padding: 3% 10%;
+
+}
+
+.header{
+    height: 48px;
+}
+.header h1{
+    margin: 0;
+}
+
+.bodyWrapper{
+    width: 100%;
+    height: calc(100% - 0px);
+    display: flex;
+    border-radius: 16px;
+    background: var(--elements--main);
+    box-shadow: var(--box-shadow-out-lg);
+}
+.userListContainer{
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+    position: relative;
+    border-right: var(--border-thin);
+}
+.userListWrapper{
+    height: calc(100% - 40px);
+    padding: 10px 6px;
+    overflow-y: auto;
+}
+.userListWrapper > div{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 4px 10px;
+    border-bottom: var(--border-thin);
+    cursor: pointer;
+    position: relative;
+}
+.userListWrapper .selected{
+    box-shadow: var(--box-shadow-out-sm);
+    border-radius: 6px;
+}
+.userListWrapper > div > .nameEmail{
+    margin-left: 10px;
+    text-align: start;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.nameEmail span{
+    line-height: normal;
+}
+.nameEmail p{
+    font-size: 12px;
+    margin: 0;
+    line-height: normal;
+    color: rgba(0, 0, 0, 0.8);
+}
+.chatContainer{
+    height: 100%;
+    width: 70%;
+}
+
+.unread{
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(255, 215, 0);
+    border: 1px solid #000;
+}
+
+.chatHeader{
+    height: 56px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: var(--border-thin);
+}
+.chatHeader > span{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.chatBody{
+    height: calc(100% - 148px);
+    overflow-y: auto;
+    margin: 8px 0;
+    padding: 0 28px;
+}
+.messageWrapper{
+    position: relative;
+    min-height: 32px;
+    height: auto;
+    padding: 0 20px;
+    margin-bottom: 2px;
+}
+.messageWrapper div{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    max-width: 60%;
+    white-space: pre-wrap;
+    padding: 6px 50px 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 1px 0.5px rgba(11, 20, 26,.13);
+}
+.date{
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 6px;
+    color: rgb(100, 100, 100);
+}
+.mleft > div{
+    left: -8px;
+    color: #72b8ff;
+}
+.mright > div{
+    left: -8px;
+}
+.mleft .newTip::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-left: 8px solid rgb(209, 232, 252);
+    border-right: 8px solid transparent;
+    border-top: 8px solid rgb(209, 232, 252);
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 0px;
+    right: -8px;
+}
+.mright .newTip::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-right: 8px solid #FFF;
+    border-left: 8px solid transparent;
+    border-top: 8px solid #FFF;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 0px;
+    left: -8px;
+}
+.mleft{
+    text-align: end;
+}
+.mright{
+    text-align: start;
+}
+.mleft div{
+    background: rgb(209, 232, 252);
+    color: #000;
+}
+.mright div{
+    background: #FFF;
+}
+.chatFooter{
+    height: 72px;
+    padding: 16px;
+    border-top: var(--border-thin);
+}
+.messageInput{
+    display: inline-block;
+    width: 80%;
+}
+.messageInput > input{
+    width: 100%;
+    display: inline-block;
+}
+.chatFooter > span:last-child{
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+.chatFooter span svg{
+    cursor: pointer;
+}
+
+.moreUsers{
+    width: auto;
+    height: auto;
+    min-width: 60px;
+    max-height: 60px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-in-sm);
+}
+.moreUsers h6{
+    margin: 0;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;  
+}
+.loaderBtn{
+    margin-top: 10px;
+}
+.loaderBtn > button{
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    margin: 0 4px;
+}
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    color: var(--text--dimmed);
+    padding: 1px 16px;
+    border-radius: 10px;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40em;
+    background: rgba(0, 0, 0, 0.1);
+    border-top: var(--border-thin);
+}
+
+.strike > span:before {
+    right: 100%;
+}
+
+.strike > span:after {
+    left: 100%;
+}

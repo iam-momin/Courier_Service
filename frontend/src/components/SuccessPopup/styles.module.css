@@ -1,0 +1,46 @@
+.successContainer{
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 99999 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: var(--popup-background-color) !important;
+}
+.successBody{
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--elements--main);
+    text-align: center !important;
+    box-shadow: var(--box-shadow-out-md);
+}
+.checkIcon{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #4BB543;
+    padding: 14px;
+    border-radius: 50%;
+}
+.crossIcon{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 14px;
+    border-radius: 50%;
+    background: #ff2015;
+}
+.bodyText{
+    font-size: 18px;
+    margin: 16px 0;
+    white-space: pre-wrap;
+}
+.okBtn{
+    width: 100%;
+}

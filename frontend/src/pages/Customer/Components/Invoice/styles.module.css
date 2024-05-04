@@ -1,0 +1,22 @@
+/* .viewDetails button{
+    border: outset;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+} */
+.invoiceContainer {
+    height: 100%;
+    padding: 20px;
+}
+
+.tabelWrapper {
+    height: calc(100% - 0px);
+}
+.tabelWrapper table thead tr th:nth-child(1),
+.tabelWrapper table tbody tr td:nth-child(1) {
+    width: 60px;
+}
+
+.viewDetails button {
+    border: none;
+    border-radius: 2px;
+}

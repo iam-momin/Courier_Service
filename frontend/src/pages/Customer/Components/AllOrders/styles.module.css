@@ -1,0 +1,16 @@
+.allOrdersContainer {
+    height: 100%;
+    padding: 20px;
+}
+
+.tabelWrapper {
+    height: calc(100% - 90px);
+}
+.tabelWrapper table thead tr th:nth-child(1),
+.tabelWrapper table tbody tr td:nth-child(1) {
+    width: 60px;
+}
+.viewDetails button {
+    border: none;
+    border-radius: 2px;
+}

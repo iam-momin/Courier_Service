@@ -1,0 +1,238 @@
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* opacity: 0.4; */
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--popup-background-color);
+}
+
+.bodayContainer {
+    width: 100%;
+    height: calc(90% - 48px);
+    max-width: 750px;
+    background: var(--elements--main);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--box-shadow-out-md);
+
+}
+.bodayContainer >  .heading{
+    font-size: 24px;
+    font-weight: 500;
+}
+.bodaySubContainer {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0 2%;
+    overflow-y: auto;
+}
+
+.bodaySubContainer>h1,
+.bodaySubContainer>div,
+.bodaySubContainer>p {
+    width: 100%;
+}
+
+.bodaySubContainer>p {
+    text-align: left;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.warning {
+    color: red
+}
+
+.bodaySubContainer>span {
+    text-align: start;
+    width: 49%;
+    margin-bottom: 8px;
+}
+
+.disableSwitch {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+textarea {
+    width: 100%;
+}
+
+.twoInputContainer {
+    display: flex;
+}
+
+.twoInputContainer>span {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.radioBtnWrapper label,
+.twoInputContainer>span>span>span {
+    margin-left: 8px;
+}
+
+.radioBtnWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.twoInputContainer>span>span>span {
+    width: 60%;
+}
+
+.contentsDetails {
+    display: inline-block;
+    width: 100% !important;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.contentsDetails>div {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+
+.contentsDetailsRowWrapper {
+    display: inline-block;
+    min-width: 575px;
+    width: calc(100% - 1px);
+    overflow-x: auto;
+}
+
+.contentsDetailsRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contentsDetailsRow span:first-child {
+    width: 6%;
+}
+
+.contentsDetailsRow span:nth-child(2) {
+    width: 40%;
+}
+
+.contentsDetailsRow span:nth-child(3),
+.contentsDetailsRow span:nth-child(4),
+.contentsDetailsRow span:nth-child(5) {
+    width: 16%;
+}
+
+.contentsDetails button {
+    margin: 0px 30px;
+}
+
+.insuranceDetailsRowWrapper {
+    display: inline-block;
+    min-width: 575px;
+    width: calc(100% - 1px);
+    overflow-x: auto;
+}
+
+.insuranceDetailsRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.insuranceDetailsRow span:first-child {
+    width: 6%;
+}
+
+.insuranceDetailsRow span:nth-child(2) {
+    width: 40%;
+}
+
+.insuranceDetailsRow span:nth-child(3),
+.insuranceDetailsRow span:nth-child(4) {
+    width: 16%;
+}
+
+.insuranceDetailsRow span:nth-child(5) {
+    width: 22%;
+}
+
+.signatureContainer {
+    display: flex;
+}
+
+.signatureWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.signatureWrapper canvas {
+    border: 1px solid #000;
+    margin-bottom: 8px;
+}
+
+.signatureWrapper>button {
+    margin: 0;
+}
+
+.dateTotalPremium {
+    width: calc(100% - 360px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dateTotalPremium>span {
+    margin: 0 20px;
+}
+
+.dateTotalPremium label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.dateTotalPremium div {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+.btnContainer {
+    width: 100%;
+    height: 48px;
+    max-width: 700px;
+    display: flex;
+    justify-content: end;
+    margin-top: 8px;
+}
+
+.btnContainer button {
+    width: 100px;
+    margin: 0 8px;
+}
+
+.exampleWrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}

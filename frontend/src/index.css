@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --dark-color: #05445E;
+  --light-dark-color: #D4F1F4;
+
+  background-color: var(--elements--main) !important;
+  background-blend-mode: soft-light, normal;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body sup {
+  color: #eb4d4b;
+  font-size: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+input::placeholder {
+  font-weight: 400;
+  color: var(--text--dimmed);
+}
+
+label {
+  color: var(--text--main);
+}
+
+.fileUpload > input{
+  width: 150px;
+  display: block;
+}
+
+.fileUpload > input{
+  display: block;
+}
+.fileUpload > input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.fileUpload > input::before {
+  content: 'Browse Images';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 8px 16px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.fileUpload.img > input::before{
+  content: 'Browse Images';
+}
+.fileUpload.pdf > input::before{
+  content: 'Browse Pdf';
+}
+.fileUpload> input:hover::before {
+  /* border-color: var(--primary-color); */
+  box-shadow: var(--box-shadow-in-sm);
+}
+.fileUpload > input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+body {
+  --primary-color: #154180;
+  --danger-color: #ff2015;
+  --box-shadow-lv-1: rgba(0, 0, 128, 0.2) 0px 8px 24px;
+  --box-shadow-lv-1: rgba(0, 0, 128, 0.2) 0px 7px 29px 0px;
+
+  /* --popup-background-color: rgba(232, 232, 241, 0.8); */
+  --popup-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  --popup-shadow: rgba(0, 0, 128, 0.2) 0px 7px 29px 0px;
+  --popup-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #dadadd;
+  --popup-shadow: inset 2px 2px 5px #dadadd, inset -3px -3px 7px #ffffff;
+}
+
+:root {
+  --text--main: #333333;
+  --text--dimmed: #b5b5b5;
+  --text--dimmed: #9f9f9f;
+  --elements--main: #ffffff;
+  --elements--shadow: #dadadd;
+  --elements--heighlight: #ffffff;
+  --helper--grey: #c4c4c4;
+  --helper--danger: #be475d;
+  --helper--success: #4ab66f;
+  --helper--pop-color: #000080;
+
+  --box-shadow-out-lg: -10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD;
+  --box-shadow-out-md: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+  --box-shadow-out-sm: -2.5px -2.5px 5px #FAFBFF, 2.5px 2.5px 5px #A6ABBD;
+
+  --box-shadow-in-lg: inset -10px -10px 20px #FAFBFF, inset 10px 10px 20px #A6ABBD;
+  --box-shadow-in-md: inset -5px -5px 10px #FAFBFF, inset 5px 5px 10px #A6ABBD;
+  --box-shadow-in-sm: inset -2.5px -2.5px 5px #FAFBFF, inset 2.5px 2.5px 5px #A6ABBD;
+
+  --border-thin: 1px solid #cbd3df !important;
+
+  --popup-background-color: rgba(255, 255, 255, 0.8);
+
+  font-size: 16px;
+}
+
+
+
+/* v1 */
+/* --text--main: #333333;
+  --text--dimmed: #c4c4c4;
+  --elements--main: #f3f3f8;
+  --elements--shadow: #dadadd;
+  --elements--heighlight: #ffffff;
+  --helper--grey: #c4c4c4;
+  --helper--danger: #be475d;
+  --helper--success: #4ab66f;
+  --helper--pop-color: #000080; */
+
+/* --text--main: #b6b6b6;
+  --text--dimmed: #333333;
+  --elements--main: #242727;
+  --elements--shadow: #1b1d2d;
+  --elements--heighlight: #2d3131;
+  --helper--grey: #c4c4c4;
+  --helper--danger: #be475d;
+  --helper--success: #4ab66f;
+  --helper--pop-color: #0000f0; */

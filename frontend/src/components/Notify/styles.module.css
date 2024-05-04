@@ -1,0 +1,33 @@
+.notify{
+    padding: 16px;
+    border-radius: 50%;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    z-index: 999;
+}
+
+@keyframes glowing {
+    0% {
+      /* background-color: #2ba805; */
+      background-color: rgb(255, 215, 0);
+    }
+    50% {
+      background-color: rgb(247, 217, 48);
+      box-shadow: 0 0 20px rgb(252, 219, 34);
+    }
+    100% {
+      background-color: rgb(255, 215, 0);
+      box-shadow: 0 0 5px rgb(255, 215, 0);
+    }
+  }
+  .notify {
+    animation: glowing 1300ms infinite;
+  }

@@ -1,0 +1,177 @@
+.ordersContainer {
+    height: 100%;
+    position: relative;
+    padding: 5px;
+}
+
+.ordersContainer>.tabelWrapper {
+    height: calc(100% - 100px);
+}
+
+.viewDetails button {
+    border: none;
+}
+
+.filterContainer {
+    width: 100%;
+    height: 50px;
+}
+
+.tabelWrapper table {
+    width: 100%;
+    table-layout: fixed
+}
+
+.tabelWrapper table thead tr th {
+    font-size: 11px;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* = = = = Partly = = = = =  */
+.partlyContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--popup-background-color);
+    z-index: 999;
+}
+
+.partlyContainer>div {
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--elements--main);
+    box-shadow: var(--box-shadow-out-md);
+}
+
+.pHeader {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pBody>table {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.pBody>table>tbody>tr>td:first-child {
+    width: 185px;
+    text-align: end;
+    font-weight: 400;
+    font-weight: 300;
+}
+
+.pBody>table>tbody>tr>td:last-child {
+    text-align: start;
+    padding-left: 10px;
+}
+
+.partlyAmountError {
+    height: 24px;
+    color: red;
+    text-align: start;
+}
+
+.pFooter {
+    text-align: end;
+    margin-top: 20px;
+}
+
+.pFooter button {
+    margin-left: 10px;
+}
+
+
+@media (min-width: 1250px) {
+
+    .tabelWrapper table thead tr th:nth-child(1),
+    .tabelWrapper table tbody tr td:nth-child(1) {
+        width: 70px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(2),
+    .tabelWrapper table tbody tr td:nth-child(2) {
+        width: 40px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(3),
+    .tabelWrapper table tbody tr td:nth-child(3) {
+        width: 90px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(4),
+    .tabelWrapper table tbody tr td:nth-child(4) {
+        width: 110px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(5),
+    .tabelWrapper table tbody tr td:nth-child(5) {
+        width: 120px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(6),
+    .tabelWrapper table tbody tr td:nth-child(6) {
+        width: 90px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(7),
+    .tabelWrapper table tbody tr td:nth-child(7) {
+        width: 120px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(8),
+    .tabelWrapper table tbody tr td:nth-child(8) {
+        width: 120px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(9),
+    .tabelWrapper table tbody tr td:nth-child(9) {
+        width: 120px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(10),
+    .tabelWrapper table tbody tr td:nth-child(10) {
+        width: 120px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(11),
+    .tabelWrapper table tbody tr td:nth-child(11) {
+        width: 120px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(12),
+    .tabelWrapper table tbody tr td:nth-child(12) {
+        width: 80px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(13),
+    .tabelWrapper table tbody tr td:nth-child(13) {
+        width: 80px;
+    }
+
+    .tabelWrapper table thead tr th:nth-child(14),
+    .tabelWrapper table tbody tr td:nth-child(14) {
+        width: 80px;
+    }
+
+    .tabelWrapper table thead tr th:last-child,
+    .tabelWrapper table tbody tr td:last-child {
+        width: 150px;
+    }
+}

@@ -1,0 +1,7 @@
+.tooltip > div:last-child{
+  background-color: #d2d2d1;
+  color: black;
+}
+.tooltip > div:first-child::before{
+  border-right-color: #d2d2d1;
+}
